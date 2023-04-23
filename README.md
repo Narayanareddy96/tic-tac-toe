@@ -4,10 +4,10 @@ This is Regular game based on React dcumention just added up in vite and tailwin
 
 see couple of images from the game
 
-# image1
+# screenshot1
 
-[[https://github.com/Narayanareddy96/tic-tac-toe/blob/5643664dfa56bc795e3b723b97184dc17de2ceca/Screenshot%202023-04-23%20184504.png|alt=screenshot]]
+![screenshot1](https://github.com/Narayanareddy96/tic-tac-toe/blob/5643664dfa56bc795e3b723b97184dc17de2ceca/Screenshot%202023-04-23%20184504.png)
 
-# image2
+# screenshot2
 
-[[https://github.com/Narayanareddy96/tic-tac-toe/blob/5643664dfa56bc795e3b723b97184dc17de2ceca/Screenshot%202023-04-23%20184612.png|alt=screenshot]]
+![screenshot2](https://github.com/Narayanareddy96/tic-tac-toe/blob/5643664dfa56bc795e3b723b97184dc17de2ceca/Screenshot%202023-04-23%20184612.png)
