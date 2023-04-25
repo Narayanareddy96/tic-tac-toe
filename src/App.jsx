@@ -4,6 +4,7 @@ import { useState } from 'react';
 function App() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
+  const [isGnameOver, setIsGnameOver] = useState(false);
   function handleClick(i) {
     if (squares[i] || calculateWinner(squares)) {
       return;
@@ -12,6 +13,7 @@ function App() {
     nextSquares[i] = xIsNext ? 'X' : 'O';
 
     setSquares(nextSquares);
+    setIsGnameOver(!nextSquares.some((i) => i === null));
     setXIsNext(!xIsNext);
   }
 
@@ -43,14 +45,20 @@ function App() {
   let status = 'Next Player : ' + (xIsNext ? 'X' : 'O');
   if (winner) {
     status = 'Winner : ' + winner;
+  } else if (isGnameOver) {
+    status = 'No Winner';
   }
   const playerColor = {
     X: 'bg-sky-600 text-white',
     O: 'bg-red-500 text-white',
   };
-  const cName = winner
+  let cName = winner
     ? 'h-16 flex justify-center items-center rounded-lg ' + playerColor[winner]
     : 'bg-gray-100 h-16 flex justify-center items-center rounded-lg';
+  if (isGnameOver) {
+    cName =
+      'h-16 flex justify-center items-center rounded-lg bg-gradient-to-r from-sky-500 to-red-500 bg-blend-multiply text-white';
+  }
   return (
     <>
       <div className="flex justify-center items-center h-screen">
