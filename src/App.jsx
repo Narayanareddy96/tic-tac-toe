@@ -63,6 +63,9 @@ function App() {
     <>
       <div className="flex justify-center items-center h-screen">
         <div className="container mx-auto">
+          <h1 className="grid grid-cols-1 gap-4 mb-4 text-center text-5xl text-ellipsis text-blue-800">
+            Tic-Tac-Toe
+          </h1>
           <div className="grid grid-cols-1 gap-4 mb-4">
             <div className={cName}>{status}</div>
           </div>
